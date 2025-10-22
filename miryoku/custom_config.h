@@ -1,6 +1,10 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+// copied miryoku/miryoku_babel/miryoku_layer_alternatives.h:117-121
+// changed U_LT(U_BUTTON, Z) to &kp Z
+// set MIRYOKU_LAYER_BASE to override base layer in miryoku/miryoku_babel/miryoku_layer_selection.h
+// this removes the button layer from Z key to allow hold-to-repeat behavior for Z key
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp H,             U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
